@@ -61,14 +61,25 @@ We do Part A together at the very start of the workshop. While your site builds,
 
     > [SCREENSHOT: GitHub file view of src/config.ts with the pencil icon highlighted]
 
-13. At the top of the file you see a block called **EDIT: basics**. Change the text **between the double quotes** `"..."` for `name`, `tagline` and `description` to your startup. No startup idea yet? Keep Plovify and just change a word or two, for example the tagline. Example:
+13. At the top of the file you see a block called **EDIT: basics**. It looks like this:
 
     ```ts
-    name: "PayBazar",
-    tagline: "Online payments for small shops in 5 minutes.",
+    name: "Plovify",
+    tagline: "Plov as a Service",
     description:
-      "Small shops in Uzbekistan lose customers because they only accept cash. PayBazar lets any shop accept cards and QR payments from a phone.",
+      "Plovify brings hot, fresh plov to every table, from a family dinner to a wedding for 800 guests. ...",
     ```
+
+    Change the text **between the double quotes** `"..."` for `name`, `tagline` and `description` to your startup. Keep the quotes and the commas. For example:
+
+    ```ts
+    name: "Your Startup Name",
+    tagline: "What you do, in one short sentence.",
+    description:
+      "One or two sentences: the problem you solve and who it is for.",
+    ```
+
+    No startup idea yet? Keep Plovify and just change a word or two, for example the tagline.
 
 14. **Building your own startup?** A few lines below, set the switch to `false`:
 
@@ -76,7 +87,7 @@ We do Part A together at the very start of the workshop. While your site builds,
     showPlovifyExamples: false,
     ```
 
-    This hides all Plovify sample content (menu, numbers, plov FAQ, the two sample blog posts and the "Plovify is fictional" footer) and uses neutral texts with **your** startup's name instead, for example "Join the PayBazar waitlist" and "Ask PayBazar". Keeping Plovify? Leave it `true`.
+    This hides all Plovify sample content (menu, numbers, plov FAQ, the two sample blog posts and the "Plovify is fictional" footer) and uses neutral texts with **your** startup's name instead, for example "Join the Your Startup Name waitlist" and "Ask Your Startup Name". Keeping Plovify? Leave it `true`.
 15. Optional, in the same block: change `accentColor` to your brand colour as a hex code (for example `"#2563eb"` for blue, `"#16a34a"` for green), and `contactEmail` to your email. Keep the `#` and the quotes. Leave everything else as it is for now; the **OPTIONAL: more sections** block (features, menu, steps, numbers, FAQ) is empty on purpose and shows the Plovify examples or neutral texts. You can add your own items there after the workshop (the comments in the file show how). Do **not** change `enableWaitlist` or `enableAssistant`. Leave them `false` for now.
 
     > **Rules so you don't break the file:**

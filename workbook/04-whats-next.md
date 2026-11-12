@@ -18,7 +18,7 @@ Learn more:
 
 ## Ideas to continue on your own
 
-- **Use your own domain** (for example `paybazar.uz`). Add your domain to Cloudflare, then in your Worker go to **Settings** → **Domains & Routes** → **Add** → **Custom domain**. Guide: https://developers.cloudflare.com/workers/configuration/routing/custom-domains/
+- **Use your own domain** (for example `yourstartup.uz`). Add your domain to Cloudflare, then in your Worker go to **Settings** → **Domains & Routes** → **Add** → **Custom domain**. Guide: https://developers.cloudflare.com/workers/configuration/routing/custom-domains/
 - **Get notified about new signups**, for example by sending yourself an email or a Telegram message from the Worker.
 - **Change the design.** Your brand colour is `accentColor` in `src/config.ts`; other colours and fonts are in `src/styles/global.css`.
 - **Write blog posts.** Add Markdown files to `src/content/blog/` (see the Level 1 bonus). Delete the two sample posts when you have your own.
