@@ -53,6 +53,8 @@ We do Part A together at the very start of the workshop. While your site builds,
 8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
    > [SCREENSHOT: deployment progress screen with build steps]
+   <img src="images/01/03-deployment-progress.png" width="480"
+    alt="Deployment progress screen with build steps">
 
 9. When it finishes, click the link to your site (it ends in `.workers.dev`). You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
