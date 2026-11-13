@@ -110,6 +110,14 @@ We do Part A together at the very start of the workshop. While your site builds,
     > - Apostrophes are fine, so Uzbek text like `"O'zbekiston"` works.
     > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
+> [!WARNING]
+> **Rules so you don't break the file:**
+>
+> - Keep every double quote `"` and every comma `,` at the end of the line.
+> - If your text needs quotes, use single quotes inside: `"The 'Uber' for tailors"`.
+> - Apostrophes are fine, so Uzbek text like `"O'zbekiston"` works.
+> - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
+
 17. Click the green **Commit changes...** button at the top right.
 18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
 
