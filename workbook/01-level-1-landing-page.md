@@ -110,7 +110,7 @@ We do Part A together at the very start of the workshop. While your site builds,
     > - Apostrophes are fine, so Uzbek text like `"O'zbekiston"` works.
     > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
-> [!WARNING]
+> [!NOTE]
 > **Rules so you don't break the file:**
 >
 > - Keep every double quote `"` and every comma `,` at the end of the line.
