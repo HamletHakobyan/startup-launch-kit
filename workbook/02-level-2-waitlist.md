@@ -34,12 +34,12 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 1. In **Tab A** (workshop repo), click the folder `worker`, then the file `index.ts`.
    Direct link: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-2/worker/index.ts
 2. Click the **Copy raw file** button (the icon with two squares, at the top right of the file).
-
-   > [SCREENSHOT: GitHub file header with the "Copy raw file" button highlighted]
+   ![GitHub file header with the "Copy raw file" button highlighted](images/02/01-github-copy-raw-file.png)
 
 3. In **Tab B** (your repo), go to the main page of your repo and click **Add file** → **Create new file**.
 
    > [SCREENSHOT: "Add file" menu with "Create new file" highlighted]
+   !["Add file" menu with "Create new file" highlighted](images/02/02-github-add-file.png)
 
 4. In the file name box, type exactly: `worker/index.ts`
    (When you type the `/`, GitHub creates the folder `worker` automatically. That is expected.)
@@ -51,7 +51,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 8. In **Tab B** (your repo), open the file `wrangler.jsonc`. Find the line that starts with `"name":` and **write down the value** between the quotes. If you kept the default name in Level 1, it is `startup-launch-kit`.
 
-   > [SCREENSHOT: wrangler.jsonc in the user's repo with the "name" line highlighted]
+   ![wrangler.jsonc in the user's repo with the "name" line highlighted](images/02/03-wrangler-name.png)
 
 9. In **Tab A** (workshop repo), open `level-2/wrangler.jsonc`.
    Direct link: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-2/wrangler.jsonc
@@ -60,7 +60,8 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 12. **Replace the whole file:** select all (Ctrl+A / Cmd+A), delete, then paste.
 13. **Check the `"name"` line.** It must be exactly the value you wrote down in step 8. If it is different, change it now.
 
-    > ⚠️ This is the most common mistake in the workshop. If the name does not match your Worker's name, the build fails with a name mismatch error.
+> [!WARNING]
+> This is the most common mistake in the workshop. If the name does not match your Worker's name, the build fails with a name mismatch error.
 
 14. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 15. Wait for the **green check ✓** next to your commit (about 1–2 minutes; this first build also creates your database).
@@ -89,14 +90,11 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 20. Open your live URL and refresh the page (Ctrl+F5 / Cmd+Shift+R). A **Waitlist** link appears in the top menu, and the main button changes from **Get in touch** to **Reserve your kazan**. Click it: it jumps to a new **Reserve your kazan for wedding season** section with an email form.
 21. Enter your email and click **Reserve**. You should see: **"You're in! People waiting for plov: 1."**
 
-    > [SCREENSHOT: landing page with the waitlist form and the success message]
+	![Landing page with the waitlist form and the success message](images/02/04-waiting-list.png)
 
-    <details>
-    <summary>Note: what happens if the same email signs up twice? (click to expand)</summary>
-
-    Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
-
-    </details>
+> [!NOTE]
+> What happens if the same email signs up twice? (click to expand)</summary>
+> Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
 
 22. *(Optional, skip if short on time.)* Open your live URL with `/api/waitlist/count` at the end, for example
     `https://startup-launch-kit.your-name.workers.dev/api/waitlist/count`
@@ -110,11 +108,9 @@ The list of emails is private. It is **not** available through your website. You
 24. In the left menu, open **Storage & databases** → **D1 SQLite Database** (or type "D1" in the search bar at the top).
 25. Click the database **startup-launch-kit-db**, then click **Explore Data** (top right).
 
-    > [SCREENSHOT: startup-launch-kit-db overview page with the Explore Data button highlighted]
+	![Startup-launch-kit-db overview page with the Explore Data button highlighted](images/02/05-d1-db-overview.png)
 
 26. Select the **waitlist** table. You should see your test emails, with the date and time they joined (in UTC).
-
-    > [SCREENSHOT: Explore Data view showing the waitlist table with test emails]
 
     <details>
     <summary>Prefer SQL? (click to expand)</summary>
@@ -126,6 +122,10 @@ The list of emails is private. It is **not** available through your website. You
     ```
 
     </details>
+
+	![Explore Data view showing the waitlist table with test emails](images/02/06-d1-sql-request.png)
+
+
 
 ## Checkpoint ✅
 
