@@ -125,9 +125,12 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 20. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
 
-    > [SCREENSHOT: personalised site with a custom name, headline and a blue accent colour]
+	![Personalised site with a custom name, headline and a blue accent colour](images/01/11-personalised-site.png)
 
-> **How to see the build log.** On GitHub, click the yellow dot / green check / red ✗ next to the commit, then **Details**. Or in the Cloudflare dashboard: **Workers & Pages** → your Worker → **Deployments** tab (or **Builds**) → click the latest build → **View build log**. A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#build-failed).
+> [!NOTE]
+> **How to see the build log.** In the Cloudflare dashboard: **Workers & Pages** → your Worker → **Deployments** tab → click the latest build → **Build**.
+![See Worker Build Logs](images/01/12-worker-build-logs.png)
+A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#build-failed).
 
 ## Checkpoint ✅
 
