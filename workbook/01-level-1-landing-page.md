@@ -23,15 +23,14 @@ We do Part A together at the very start of the workshop. While your site builds,
    https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
+      <p align="center">
      <img src="images/01/00-new-github-connection.png" width="480"
-      alt="Cloudflare setup page: under Git account, click New GitHub connection">
+          alt="Cloudflare setup page: under Git account, click New GitHub connection">
+   </p>
    A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
    Keep **All repositories** selected and click **Install & Authorize**.
    GitHub then sends you back to Cloudflare automatically.
-      <p align="center">
-     <img src="images/01/01-github-install-authorize.png" width="480"
-          alt="GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize">
-     </p>
+   ![GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize](images/01/01-github-install-authorize.png)
    > This lets Cloudflare create your repository and rebuild your site when you change it.
    > You can limit access to specific repositories later in GitHub → Settings → Applications.
 
@@ -48,10 +47,10 @@ We do Part A together at the very start of the workshop. While your site builds,
 
    > ⚠️ If you **do** change the Worker name, write it down now. You will need it in Level 2.
 
-   <p align="center">
-     <img src="images/01/02-worker-setup-window.png" width="480"
-          alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
-   </p>
+      <img src="images/01/02-worker-setup-window.png" width="480"
+        alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
+        
+   ![Cloudflare setup page with labels: Git account = your account, Repository name = startup-launch-kit, Private/Public toggle, Worker name = startup-launch-kit, Build command = npm run build, Deploy command = npm run deploy (all left at defaults)](images/01/02-worker-setup-window.png)
 
 7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
 8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
