@@ -52,7 +52,6 @@ We do Part A together at the very start of the workshop. While your site builds,
 7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
 8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
-   > [SCREENSHOT: deployment progress screen with build steps]
    <img src="images/01/03-deployment-progress.png" width="480"
     alt="Deployment progress screen with build steps">
 
