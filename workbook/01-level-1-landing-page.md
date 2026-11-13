@@ -113,9 +113,11 @@ We do Part A together at the very start of the workshop. While your site builds,
 > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
 17. Click the green **Commit changes...** button at the top right.
+![Github Commit Changes](images/01/08-commit-changes.png)
+
 18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
 
-    > [SCREENSHOT: GitHub commit dialog with "Commit directly to the main branch" selected]
+![Github Commit to Main](images/01/09-commit-to-main.png)
 
 19. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
 
