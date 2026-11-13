@@ -121,7 +121,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 19. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
 
-    > [SCREENSHOT: GitHub repo page showing the yellow dot / green check next to the latest commit]
+    ![GitHub repo page showing the green check next to the latest commit](images/01/10-commit-passed.png)
 
 20. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
 
