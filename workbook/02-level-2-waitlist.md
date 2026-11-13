@@ -86,13 +86,19 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 ### Part D: Test it
 
-20. Open your live URL and refresh the page (Ctrl+F5 / Cmd+Shift+R). A **Waitlist** link appears in the top menu, and the main buttons change from **Get in touch** to **Get early access** and jump to a new **Join the <your startup's name> waitlist** section with an email form. (Kept Plovify with `showPlovifyExamples: true`? Then you see **Reserve your kazan** and **Reserve your kazan for wedding season** instead. To change the button text, set `callToAction` in `src/config.ts`.)
-21. Enter your email and click **Join** (Plovify: **Reserve**). You should see: **"You're in! People on the waitlist: 1."** (Plovify: **"People waiting for plov: 1."**)
+20. Open your live URL and refresh the page (Ctrl+F5 / Cmd+Shift+R). A **Waitlist** link appears in the top menu, and the main button changes from **Get in touch** to **Reserve your kazan**. Click it: it jumps to a new **Reserve your kazan for wedding season** section with an email form.
+21. Enter your email and click **Reserve**. You should see: **"You're in! People waiting for plov: 1."**
 
     > [SCREENSHOT: landing page with the waitlist form and the success message]
 
-22. Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
-23. *(Optional, skip if short on time.)* Open your live URL with `/api/waitlist/count` at the end, for example
+    <details>
+    <summary>Note: what happens if the same email signs up twice? (click to expand)</summary>
+
+    Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
+
+    </details>
+
+22. *(Optional, skip if short on time.)* Open your live URL with `/api/waitlist/count` at the end, for example
     `https://startup-launch-kit.your-name.workers.dev/api/waitlist/count`
     You should see something like `{"count":2}`. This is your API answering directly.
 
@@ -100,22 +106,26 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 The list of emails is private. It is **not** available through your website. You see it in the Cloudflare dashboard:
 
-24. Go to https://dash.cloudflare.com
-25. In the left menu, open **Storage & databases** → **D1 SQL database** (or type "D1" in the search bar at the top).
-26. Click the database **startup-launch-kit-db**.
+23. Go to https://dash.cloudflare.com
+24. In the left menu, open **Storage & databases** → **D1 SQLite Database** (or type "D1" in the search bar at the top).
+25. Click the database **startup-launch-kit-db**, then click **Explore Data** (top right).
 
-    > [SCREENSHOT: D1 database list showing startup-launch-kit-db]
+    > [SCREENSHOT: startup-launch-kit-db overview page with the Explore Data button highlighted]
 
-27. Open the **Console** tab.
-28. Paste this and click **Execute**:
+26. Select the **waitlist** table. You should see your test emails, with the date and time they joined (in UTC).
+
+    > [SCREENSHOT: Explore Data view showing the waitlist table with test emails]
+
+    <details>
+    <summary>Prefer SQL? (click to expand)</summary>
+
+    Open the **Console** tab instead, paste this and click **Execute**:
 
     ```sql
     SELECT * FROM waitlist ORDER BY created_at DESC;
     ```
 
-    You should see your test emails, with the date and time they joined (in UTC).
-
-    > [SCREENSHOT: D1 Console with query results showing the waitlist table]
+    </details>
 
 ## Checkpoint ✅
 

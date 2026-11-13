@@ -79,7 +79,7 @@ The `"name"` line in your `wrangler.jsonc` must be **exactly** the name of your 
 **The form says "Something went wrong on our side"** or `/api/waitlist/count` shows an error:
 
 1. Check the build log of the commit where you replaced `wrangler.jsonc`. It should mention creating or binding a D1 database `startup-launch-kit-db`.
-2. Check the database exists: https://dash.cloudflare.com → **Storage & databases** → **D1 SQL database**. You should see `startup-launch-kit-db`.
+2. Check the database exists: https://dash.cloudflare.com → **Storage & databases** → **D1 SQLite Database**. You should see `startup-launch-kit-db`.
 3. Check the Worker is connected to it: **Workers & Pages** → your Worker → **Settings** (or **Bindings**). You should see a binding `DB` → `startup-launch-kit-db`.
 4. If the database is missing, make a small change to any file (for example add a space in `src/config.ts`) and commit, to start a new build.
 5. Check the [live logs](#where-to-see-logs) for a line starting with `API error:`.
@@ -92,13 +92,9 @@ The `"name"` line in your `wrangler.jsonc` must be **exactly** the name of your 
 
 **I don't see the form at all:** check that `enableWaitlist: true` in `src/config.ts`, wait for the green ✓, and refresh.
 
-**How do I see the emails?** Only in the dashboard (they are private): **Storage & databases** → **D1 SQL database** → `startup-launch-kit-db` → **Console** → run:
+**How do I see the emails?** Only in the dashboard (they are private): **Storage & databases** → **D1 SQLite Database** → `startup-launch-kit-db` → **Explore Data** → select the `waitlist` table. (Or open the **Console** tab and run `SELECT * FROM waitlist ORDER BY created_at DESC;`)
 
-```sql
-SELECT * FROM waitlist ORDER BY created_at DESC;
-```
-
-If it says `no such table: waitlist`, nobody has used the form yet. Submit the form once, then run the query again.
+If there is no `waitlist` table (or the console says `no such table: waitlist`), nobody has used the form yet. Submit the form once, then look again.
 
 ## AI errors
 
