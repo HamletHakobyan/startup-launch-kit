@@ -54,8 +54,8 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 ![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
 
-9. When it finishes, click the link to your site (it ends in `.workers.dev`).
-![Deployment progress screen with build steps](images/01/04-visit-site.png)
+9. When it finishes, click **Visit** button at the right upper corner to access your site.
+![Visit Button to Access Website](images/01/04-visit-site.png)
 
 10. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
