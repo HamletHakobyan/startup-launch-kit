@@ -63,7 +63,8 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 11. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
 
-> **Tip: how to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page.
+> [!TIP]
+> **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
 > ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
 
 ### Part B: Make it about YOUR startup (about 18 minutes)
@@ -102,13 +103,6 @@ We do Part A together at the very start of the workshop. While your site builds,
 
     This hides all Plovify sample content (menu, numbers, plov FAQ, the two sample blog posts and the "Plovify is fictional" footer) and uses neutral texts with **your** startup's name instead, for example "Join the Your Startup Name waitlist" and "Ask Your Startup Name". Keeping Plovify? Leave it `true`.
 16. Optional, in the same block: change `accentColor` to your brand colour as a hex code (for example `"#2563eb"` for blue, `"#16a34a"` for green), and `contactEmail` to your email. Keep the `#` and the quotes. Leave everything else as it is for now; the **OPTIONAL: more sections** block (features, menu, steps, numbers, FAQ) is empty on purpose and shows the Plovify examples or neutral texts. You can add your own items there after the workshop (the comments in the file show how). Do **not** change `enableWaitlist` or `enableAssistant`. Leave them `false` for now.
-
-    > [!WARNING]
-    > **Rules so you don't break the file:**
-    > - Keep every double quote `"` and every comma `,` at the end of the line.
-    > - If your text needs quotes, use single quotes inside: `"The 'Uber' for tailors"`.
-    > - Apostrophes are fine, so Uzbek text like `"O'zbekiston"` works.
-    > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
 > [!NOTE]
 > **Rules so you don't break the file:**
