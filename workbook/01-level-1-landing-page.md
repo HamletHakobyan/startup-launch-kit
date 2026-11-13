@@ -116,8 +116,8 @@ We do Part A together at the very start of the workshop. While your site builds,
 ![Github Commit Changes](images/01/08-commit-changes.png)
 
 18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
-
-![Github Commit to Main](images/01/09-commit-to-main.png)
+   <img src="images/01/09-commit-to-main.png" width="480"
+          alt="Github Commit to Main">
 
 19. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
 
