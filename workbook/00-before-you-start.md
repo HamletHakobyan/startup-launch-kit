@@ -22,7 +22,7 @@ GitHub is where your website's files will live.
 3. Open your email inbox and click the verification link from GitHub.
 4. Go to https://github.com/settings/emails and check that your email does **not** say "Unverified".
 
-> [SCREENSHOT: GitHub email settings page showing a verified email]
+![GitHub email settings: your email is marked Verified](images/00/00-github-verified-email.png)
 
 Already have a GitHub account? Just do step 4.
 
@@ -35,7 +35,7 @@ Cloudflare is where your website will run.
 3. Open your email inbox and click the verification link from Cloudflare.
 4. Log in at https://dash.cloudflare.com. If Cloudflare asks what you want to do first, you can skip or close that screen.
 
-> [SCREENSHOT: Cloudflare dashboard home after first login]
+![Cloudflare dashboard home page after your first login](images/00/01-cf-home-first-login.png)
 
 Already have a Cloudflare account? Just log in and make sure your email is verified (a yellow banner at the top means it is not verified yet).
 
