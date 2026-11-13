@@ -43,6 +43,7 @@ We do Part A together at the very start of the workshop. While your site builds,
    | Other resource settings (if shown) | Keep the suggested settings. |
 
    > ⚠️ If you **do** change the Worker name, write it down now. You will need it in Level 2.
+   
    ![Cloudflare setup page with labels: Git account = your account, Repository name = startup-launch-kit, Private/Public toggle, Worker name = startup-launch-kit, Build command = npm run build, Deploy command = npm run deploy (all left at defaults)](images/01/02-worker-setup-window.png)
 
 7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
