@@ -113,13 +113,15 @@ We do Part A together at the very start of the workshop. While your site builds,
 > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
 17. Click the green **Commit changes...** button at the top right.
-18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
+![Github Commit Changes](images/01/08-commit-changes.png)
 
-    > [SCREENSHOT: GitHub commit dialog with "Commit directly to the main branch" selected]
+18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
+   <img src="images/01/09-commit-to-main.png" width="480"
+          alt="Github Commit to Main">
 
 19. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
 
-    > [SCREENSHOT: GitHub repo page showing the yellow dot / green check next to the latest commit]
+    ![GitHub repo page showing the green check next to the latest commit](images/01/10-commit-passed.png)
 
 20. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
 
