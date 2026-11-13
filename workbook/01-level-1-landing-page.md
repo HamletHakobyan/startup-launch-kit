@@ -125,7 +125,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 20. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
 
-	![Personalised site with a custom name, headline and a blue accent colour](images/01/11-personalised-site.png)
+	![Personalised site with a custom name, headline and a blue accent colour](images/01/11-personalized-site.png)
 
 > [!NOTE]
 > **How to see the build log.** In the Cloudflare dashboard: **Workers & Pages** → your Worker → **Deployments** tab → click the latest build → **Build**.
