@@ -112,6 +112,8 @@ The list of emails is private. It is **not** available through your website. You
 
 26. Select the **waitlist** table. You should see your test emails, with the date and time they joined (in UTC).
 
+    ![Explore Data view showing the waitlist table with test emails](images/02/07-d1-waitlist.png)
+
     <details>
     <summary>Prefer SQL? (click to expand)</summary>
 
@@ -120,12 +122,10 @@ The list of emails is private. It is **not** available through your website. You
     ```sql
     SELECT * FROM waitlist ORDER BY created_at DESC;
     ```
+	
+    ![Explore Data view showing the waitlist table with test emails](images/02/06-d1-sql-request.png)
 
     </details>
-
-	![Explore Data view showing the waitlist table with test emails](images/02/06-d1-sql-request.png)
-
-
 
 ## Checkpoint ✅
 
