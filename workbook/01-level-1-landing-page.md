@@ -22,11 +22,16 @@ We do Part A together at the very start of the workshop. While your site builds,
 2. In a new tab, open this link (it is the Level 1 **Deploy to Cloudflare** button):
    https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1
 3. If Cloudflare asks you to choose an account, choose your account.
-4. Under **Git account**, click **GitHub** and connect your GitHub account. A GitHub window opens: click **Authorize** / **Install** (you can choose "All repositories" or "Only select repositories"; both work).
+4. Under **Git account**, click **New GitHub connection**.
+   ![Cloudflare Worker - New Github Connection](images/01/00-new-github-connection.png)
+   A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
+   Keep **All repositories** selected and click **Install & Authorize**.
+   GitHub then sends you back to Cloudflare automatically.
+   ![GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize](images/01/01-github-install-authorize.png)
+   > This lets Cloudflare create your repository and rebuild your site when you change it.
+   > You can limit access to specific repositories later in GitHub → Settings → Applications.
 
-   > [SCREENSHOT: Deploy to Cloudflare page with the "Connect GitHub" button highlighted]
-
-5. The setup page shows several fields. Fill them in like this:
+6. The setup page shows several fields. Fill them in like this:
 
    | Field | What to do |
    | --- | --- |
@@ -35,21 +40,20 @@ We do Part A together at the very start of the workshop. While your site builds,
    | **Private / Public** repository | Either is fine. Private keeps your code to yourself. |
    | **Worker name** / project name | **Keep `startup-launch-kit`.** |
    | **Build command**, **Deploy command**, **Advanced settings** | Leave them exactly as they are. |
-   | Database or other resource settings (if shown) | Keep the suggested settings. |
+   | Other resource settings (if shown) | Keep the suggested settings. |
 
    > ⚠️ If you **do** change the Worker name, write it down now. You will need it in Level 2.
+   ![Cloudflare setup page with labels: Git account = your account, Repository name = startup-launch-kit, Private/Public toggle, Worker name = startup-launch-kit, Build command = npm run build, Deploy command = npm run deploy (all left at defaults)](images/01/02-worker-setup-window.png)
 
-   > [SCREENSHOT: setup page with labels: Git account = your account, Repository name = startup-launch-kit, Private/Public toggle, Worker name = startup-launch-kit, Build command = npm run build, Deploy command = npm run deploy (all left at defaults)]
-
-6. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
-7. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
+7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
+8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
    > [SCREENSHOT: deployment progress screen with build steps]
 
-8. When it finishes, click the link to your site (it ends in `.workers.dev`). You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
+9. When it finishes, click the link to your site (it ends in `.workers.dev`). You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
    > [SCREENSHOT: the Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons]
-9. Copy that address from your browser's address bar and keep it somewhere (a note or the chat). This is **your live URL**.
+10. Copy that address from your browser's address bar and keep it somewhere (a note or the chat). This is **your live URL**.
 
 > **Tip: how to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page (look for **Domains & Routes** or a **Visit** link).
 
