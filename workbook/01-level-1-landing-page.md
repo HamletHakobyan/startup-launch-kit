@@ -54,12 +54,17 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 ![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
 
-9. When it finishes, click the link to your site (it ends in `.workers.dev`). You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
+9. When it finishes, click the link to your site (it ends in `.workers.dev`).
+![Deployment progress screen with build steps](images/01/04-visit-site.png)
 
-   > [SCREENSHOT: the Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons]
-10. Copy that address from your browser's address bar and keep it somewhere (a note or the chat). This is **your live URL**.
+10. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
-> **Tip: how to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page (look for **Domains & Routes** or a **Visit** link).
+![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
+
+11. Copy that address from your browser's address bar and keep it somewhere (a note or the chat). This is **your live URL**.
+
+> **Tip: how to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page.
+> ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
 
 ### Part B: Make it about YOUR startup (about 18 minutes)
 
