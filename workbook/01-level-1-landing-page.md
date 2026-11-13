@@ -23,11 +23,13 @@ We do Part A together at the very start of the workshop. While your site builds,
    https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
-   ![Cloudflare Worker - New Github Connection](images/01/00-new-github-connection.png)
+   <img src="images/01/00-new-github-connection.png" width="480"
+          alt="Cloudflare setup page: under Git account, click New GitHub connection">
    A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
    Keep **All repositories** selected and click **Install & Authorize**.
    GitHub then sends you back to Cloudflare automatically.
-   ![GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize](images/01/01-github-install-authorize.png)
+   <img src="images/01/01-github-install-authorize.png" width="480"
+    alt="GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize">
    > This lets Cloudflare create your repository and rebuild your site when you change it.
    > You can limit access to specific repositories later in GitHub → Settings → Applications.
 
@@ -44,12 +46,14 @@ We do Part A together at the very start of the workshop. While your site builds,
 
    > ⚠️ If you **do** change the Worker name, write it down now. You will need it in Level 2.
    
-   ![Cloudflare setup page with labels: Git account = your account, Repository name = startup-launch-kit, Private/Public toggle, Worker name = startup-launch-kit, Build command = npm run build, Deploy command = npm run deploy (all left at defaults)](images/01/02-worker-setup-window.png)
+   <img src="images/01/02-worker-setup-window.png" width="480"
+    alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
 
 7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
 8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
-   > [SCREENSHOT: deployment progress screen with build steps]
+   <img src="images/01/03-deployment-progress.png" width="480"
+    alt="Deployment progress screen with build steps">
 
 9. When it finishes, click the link to your site (it ends in `.workers.dev`). You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
