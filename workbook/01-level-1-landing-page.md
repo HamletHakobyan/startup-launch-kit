@@ -23,10 +23,7 @@ We do Part A together at the very start of the workshop. While your site builds,
    https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
-      <p align="center">
-     <img src="images/01/00-new-github-connection.png" width="480"
-          alt="Cloudflare setup page: under Git account, click New GitHub connection">
-   </p>
+   ![Cloudflare Worker - New Github Connection](images/01/00-new-github-connection.png)
    A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
    Keep **All repositories** selected and click **Install & Authorize**.
    GitHub then sends you back to Cloudflare automatically.
