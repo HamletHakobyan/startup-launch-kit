@@ -13,6 +13,16 @@ function pick<T>(own: T[] | undefined, example: T[], neutral: T[]): T[] {
   return examples ? example : neutral;
 }
 
+function suggestions(): string[] {
+  if (site.assistantSuggestions && site.assistantSuggestions.length > 0) {
+    return site.assistantSuggestions;
+  }
+  const ownFaq = (site.faq ?? []).map((item) => item.question).filter(Boolean);
+  if (ownFaq.length > 0) return ownFaq.slice(0, 3);
+  if (examples) return plovify.assistantSuggestions;
+  return [`What does ${name} do?`, `Who is ${name} for?`, "How can I get in touch?"];
+}
+
 export const content = {
   examples,
   eyebrow: site.eyebrow || (examples ? plovify.eyebrow : ""),
@@ -46,11 +56,10 @@ export const content = {
   assistant: {
     title: `Ask ${name}`,
     text: "Our AI assistant knows everything on this page. Ask in English, Russian, Uzbek or your language.",
-    suggestions: pick(site.assistantSuggestions, plovify.assistantSuggestions, [
-      `What does ${name} do?`,
-      `Who is ${name} for?`,
-      "How can I get in touch?",
-    ]),
+    // Suggested questions must match what the page actually says:
+    // 1) your own suggestions, 2) the first questions of YOUR FAQ,
+    // 3) Plovify's (only while the page shows Plovify's FAQ), 4) generic ones.
+    suggestions: suggestions(),
     offTopicExample: examples ? plovify.offTopicExample : "",
   },
 };
