@@ -33,7 +33,7 @@ We do Part A together at the very start of the workshop. While your site builds,
    > This lets Cloudflare create your repository and rebuild your site when you change it.
    > You can limit access to specific repositories later in GitHub → Settings → Applications.
 
-6. The setup page shows several fields. Fill them in like this:
+5. The setup page shows several fields. Fill them in like this:
 
    | Field | What to do |
    | --- | --- |
@@ -49,19 +49,19 @@ We do Part A together at the very start of the workshop. While your site builds,
    <img src="images/01/02-worker-setup-window.png" width="480"
     alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
 
-7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
-8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
+6. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
+7. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
 ![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
 
-9. When it finishes, click **Visit** button at the right upper corner to access your site.
+8. When it finishes, click **Visit** button at the right upper corner to access your site.
 ![Visit Button to Access Website](images/01/04-visit-site.png)
 
-10. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
+9. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
 ![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
 
-11. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
+10. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
 
 > [!TIP]
 > **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
@@ -69,9 +69,9 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 ### Part B: Make it about YOUR startup (about 18 minutes)
 
-10. Open your repo on GitHub: go to `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it). Or click the GitHub repository link on the Cloudflare page.
-11. Click the folder `src`, then click the file `config.ts`.
-12. Click the **pencil icon** (✏️ "Edit this file") at the top right of the file.
+11. Open your repo on GitHub: go to `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it). Or click the GitHub repository link on the Cloudflare page.
+12. Click the folder `src`, then click the file `config.ts`.
+13. Click the **pencil icon** (✏️ "Edit this file") at the top right of the file.
     
     ![GitHub file view of src/config.ts with the pencil icon highlighted](images/01/07-github-src-configts.png)
 
