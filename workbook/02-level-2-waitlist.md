@@ -60,7 +60,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 12. **Replace the whole file:** select all (Ctrl+A / Cmd+A), delete, then paste.
 13. **Check the `"name"` line.** It must be exactly the value you wrote down in step 8. If it is different, change it now.
 
-    > ⚠️ This is the most common mistake in the workshop. If the name does not match your Worker's name, the build fails with a name mismatch error.
+    ⚠️ This is the most common mistake in the workshop. If the name does not match your Worker's name, the build fails with a name mismatch error.
 
 14. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 15. Wait for the **green check ✓** next to your commit (about 1–2 minutes; this first build also creates your database).
