@@ -28,10 +28,9 @@ We do Part A together at the very start of the workshop. While your site builds,
    A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
    Keep **All repositories** selected and click **Install & Authorize**.
    GitHub then sends you back to Cloudflare automatically.
-      <p align="center">
-     <img src="images/01/01-github-install-authorize.png" width="480"
-          alt="GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize">
-     </p>
+   <img src="images/01/01-github-install-authorize.png" width="480"
+   alt="GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize">
+   
    > This lets Cloudflare create your repository and rebuild your site when you change it.
    > You can limit access to specific repositories later in GitHub → Settings → Applications.
 
@@ -47,11 +46,9 @@ We do Part A together at the very start of the workshop. While your site builds,
    | Other resource settings (if shown) | Keep the suggested settings. |
 
    > ⚠️ If you **do** change the Worker name, write it down now. You will need it in Level 2.
-
-   <p align="center">
-     <img src="images/01/02-worker-setup-window.png" width="480"
-          alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
-   </p>
+   
+   <img src="images/01/02-worker-setup-window.png" width="480"
+   alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
 
 7. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
 8. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
