@@ -61,7 +61,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 ![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
 
-11. Copy that address from your browser's address bar and keep it somewhere (a note or the chat). This is **your live URL**.
+11. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
 
 > **Tip: how to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page.
 > ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
@@ -71,10 +71,10 @@ We do Part A together at the very start of the workshop. While your site builds,
 10. Open your repo on GitHub: go to `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it). Or click the GitHub repository link on the Cloudflare page.
 11. Click the folder `src`, then click the file `config.ts`.
 12. Click the **pencil icon** (✏️ "Edit this file") at the top right of the file.
+    
+    ![GitHub file view of src/config.ts with the pencil icon highlighted](images/01/07-github-src-configts.png)
 
-    > [SCREENSHOT: GitHub file view of src/config.ts with the pencil icon highlighted]
-
-13. At the top of the file you see a block called **EDIT: basics**. It looks like this:
+14. At the top of the file you see a block called **EDIT: basics**. It looks like this:
 
     ```ts
     name: "Plovify",
@@ -94,14 +94,14 @@ We do Part A together at the very start of the workshop. While your site builds,
 
     No startup idea yet? Keep Plovify and just change a word or two, for example the tagline.
 
-14. **Building your own startup?** A few lines below, set the switch to `false`:
+15. **Building your own startup?** A few lines below, set the switch to `false`:
 
     ```ts
     showPlovifyExamples: false,
     ```
 
     This hides all Plovify sample content (menu, numbers, plov FAQ, the two sample blog posts and the "Plovify is fictional" footer) and uses neutral texts with **your** startup's name instead, for example "Join the Your Startup Name waitlist" and "Ask Your Startup Name". Keeping Plovify? Leave it `true`.
-15. Optional, in the same block: change `accentColor` to your brand colour as a hex code (for example `"#2563eb"` for blue, `"#16a34a"` for green), and `contactEmail` to your email. Keep the `#` and the quotes. Leave everything else as it is for now; the **OPTIONAL: more sections** block (features, menu, steps, numbers, FAQ) is empty on purpose and shows the Plovify examples or neutral texts. You can add your own items there after the workshop (the comments in the file show how). Do **not** change `enableWaitlist` or `enableAssistant`. Leave them `false` for now.
+16. Optional, in the same block: change `accentColor` to your brand colour as a hex code (for example `"#2563eb"` for blue, `"#16a34a"` for green), and `contactEmail` to your email. Keep the `#` and the quotes. Leave everything else as it is for now; the **OPTIONAL: more sections** block (features, menu, steps, numbers, FAQ) is empty on purpose and shows the Plovify examples or neutral texts. You can add your own items there after the workshop (the comments in the file show how). Do **not** change `enableWaitlist` or `enableAssistant`. Leave them `false` for now.
 
     > **Rules so you don't break the file:**
     > - Keep every double quote `"` and every comma `,` at the end of the line.
@@ -109,16 +109,16 @@ We do Part A together at the very start of the workshop. While your site builds,
     > - Apostrophes are fine, so Uzbek text like `"O'zbekiston"` works.
     > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
-16. Click the green **Commit changes...** button at the top right.
-17. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
+17. Click the green **Commit changes...** button at the top right.
+18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
 
     > [SCREENSHOT: GitHub commit dialog with "Commit directly to the main branch" selected]
 
-18. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
+19. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
 
     > [SCREENSHOT: GitHub repo page showing the yellow dot / green check next to the latest commit]
 
-19. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
+20. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
 
     > [SCREENSHOT: personalised site with a custom name, headline and a blue accent colour]
 
