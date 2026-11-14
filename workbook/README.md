@@ -24,7 +24,7 @@ And it is not a toy: **your prototype is your production.** The same setup can s
 | 2 | [Level 2: Waitlist and database](02-level-2-waitlist.md) + checkpoint | 0:45 | 28 min |
 | 3 | [Level 3: AI assistant](03-level-3-ai-assistant.md) + checkpoint | 1:13 | 22 min |
 | — | Demo: AI agents and MCP (presenter, just watch) | 1:35 | 9 min |
-| 4 | [What's next + LinkedIn giveaway](04-whats-next.md) | 1:44 | 16 min |
+| 4 | [What's next](04-whats-next.md) | 1:44 | 16 min |
 | ? | [Troubleshooting](troubleshooting.md) (open when something goes wrong) | any time | — |
 
 ## The workshop repository

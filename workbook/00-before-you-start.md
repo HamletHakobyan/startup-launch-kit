@@ -11,7 +11,8 @@ Please do this **before** the workshop. It takes about 10 minutes.
 - A **GitHub** account with a verified email.
 - A **Cloudflare** account with a verified email.
 
-You do **not** need a credit card. You do **not** need to install anything.
+> [!TIP]
+> You do **not** need a credit card. You do **not** need to install anything.
 
 ## Step 1: Create a GitHub account
 
@@ -24,7 +25,8 @@ GitHub is where your website's files will live.
 
 ![GitHub email settings: your email is marked Verified](images/00/00-github-verified-email.png)
 
-Already have a GitHub account? Just do step 4.
+> [!TIP]
+> Already have a GitHub account? Just do step 4.
 
 ## Step 2: Create a Cloudflare account
 
@@ -37,7 +39,9 @@ Cloudflare is where your website will run.
 
 ![Cloudflare dashboard home page after your first login](images/00/01-cf-home-first-login.png)
 
-Already have a Cloudflare account? Just log in and make sure your email is verified (a yellow banner at the top means it is not verified yet).
+
+> [!TIP]
+> Already have a Cloudflare account? Just log in and make sure your email is verified (a yellow banner at the top means it is not verified yet).
 
 ## Step 3: 5-minute check
 
@@ -61,7 +65,8 @@ In Level 1 you will click one button. Here is what happens behind it, so nothing
 4. **It builds and publishes your site.** You get a free web address like `https://startup-launch-kit.your-name.workers.dev`.
 5. **It sets up automatic updates.** Every time you save (commit) a change in your GitHub repository, Cloudflare rebuilds and republishes your site in about one minute. Developers call this **CI/CD**.
 
-You will not be charged. Everything in this workshop fits in the Cloudflare free plan.
+> [!TIP]
+> You will not be charged. Everything in this workshop fits in the Cloudflare free plan.
 
 ## Optional: for developers
 
