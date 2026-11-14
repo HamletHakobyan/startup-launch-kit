@@ -63,11 +63,15 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 > [!NOTE]
 > Your database is found by its name (`startup-launch-kit-db`), so nothing else needs to be copied from your old file.
 > **startup-launch-kit/wrangler.jsonc:**
-> ```ts
-	<...>
+   📄 `wrangler.jsonc`
+   
+   ```jsonc
+   {
+     // ...
 	"database_name": "startup-launch-kit-db"
-	<...>
-```
+     // ...
+   }
+   ```
 > Your existing waitlist emails stay where they are.
 
 13. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
