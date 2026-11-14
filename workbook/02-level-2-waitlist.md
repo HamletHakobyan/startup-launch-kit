@@ -114,18 +114,24 @@ The list of emails is private. It is **not** available through your website. You
 
     ![Explore Data view showing the waitlist table with test emails](images/02/07-d1-waitlist.png)
 
-    <details>
-    <summary>Prefer SQL? (click to expand)</summary>
+   <details>
+   <summary><b>💻 Prefer SQL? Run a query instead</b></summary>
+   <br>
 
-    Open the **Console** tab instead, paste this and click **Execute**:
+   Open the **Console** tab, paste this query and click **Execute**:
 
-    ```sql
-    SELECT * FROM waitlist ORDER BY created_at DESC;
-    ```
-	
-    ![Explore Data view showing the waitlist table with test emails](images/02/06-d1-sql-request.png)
+   ```sql
+   SELECT * FROM waitlist ORDER BY created_at DESC;
+   ```
 
-    </details>
+   This shows every signup, newest first.
+
+   <p align="center">
+     <img src="images/02/06-d1-sql-request.png" width="600"
+          alt="D1 Console tab: the SQL query and its result, the waitlist rows with emails and signup times">
+   </p>
+
+   </details>
 
 ## Checkpoint ✅
 
