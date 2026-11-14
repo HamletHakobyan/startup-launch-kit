@@ -44,7 +44,8 @@ We do Part A together at the very start of the workshop. While your site builds,
    | **Build command**, **Deploy command**, **Advanced settings** | Leave them exactly as they are. |
    | Other resource settings (if shown) | Keep the suggested settings. |
 
-   > ⚠️ If you **do** change the Worker name, write it down now. You will need it in Level 2.
+> [!WARNING]
+> If you **do** change the Worker name, write it down now. You will need it in Level 2.
    
    <img src="images/01/02-worker-setup-window.png" width="480"
     alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">

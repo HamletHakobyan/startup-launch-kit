@@ -62,7 +62,7 @@ In Level 1 you will click one button. Here is what happens behind it, so nothing
 1. **It asks you to connect GitHub to Cloudflare.** You will see a GitHub page asking to give Cloudflare access. This lets Cloudflare create a repository for you and watch it for changes. Click **Authorize** / **Install**.
 2. **It copies the project into a new repository in YOUR GitHub account.** This is your own copy. You can change anything in it.
 3. **It creates a Worker in YOUR Cloudflare account.** A Worker is a small program that runs on Cloudflare's network in 330+ cities around the world. Your website runs on it.
-4. **It builds and publishes your site.** You get a free web address like `https://startup-launch-kit.your-name.workers.dev`.
+4. **It builds and publishes your site.** You get a free web address like `https://startup-launch-kit.<your-name>.workers.dev`.
 5. **It sets up automatic updates.** Every time you save (commit) a change in your GitHub repository, Cloudflare rebuilds and republishes your site in about one minute. Developers call this **CI/CD**.
 
 > [!TIP]
