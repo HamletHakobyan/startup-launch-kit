@@ -63,14 +63,12 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 6. Click **Deploy**.
 7. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
-
 	![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
 
 8. When it finishes, click **Visit** button at the right upper corner to access your site.
 	![Visit Button to Access Website](images/01/04-visit-site.png)
 
 9. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
-
 	![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
 
 10. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
