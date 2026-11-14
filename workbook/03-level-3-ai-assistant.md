@@ -93,7 +93,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **Ask <your startup's name>** section.
 
-    ![Landing page with the ASK AI button](images/03/02-website-askai-added.png)
+    ![Landing page with the ASK AI button](images/03/01-website-askai-added)
 20. Click the first suggested question: **Do you have vegetarian plov?**. After a few seconds an answer appears below.
 
     !["Ask Plovify" AI answer](images/03/02-website-askai-question.png)
