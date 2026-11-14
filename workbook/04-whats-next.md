@@ -35,68 +35,14 @@ Apply at **cloudflare.com/forstartups** (terms may change, so check the page for
 
 https://www.cloudflare.com/forstartups/
 
-## Talk to us
-
-- **Want a Cloudflare solutions engineer to review your architecture?** Leave your details here: <SE_REVIEW_FORM_LINK>
-- **Questions after the workshop?** Join our Telegram community for help from the team and other founders: <TELEGRAM_GROUP_LINK>
-
-## LinkedIn giveaway 🎧
-
-Post about the workshop on LinkedIn and you can enter the prize draw for **AirPods**.
-
-**How to enter:**
-
-1. Publish a LinkedIn post about today's workshop **within 48 hours** after it ends.
-2. **Tag Cloudflare** (type `@Cloudflare` and choose the company page) **and the presenter** (type `@<PRESENTER_NAME>` and choose their profile).
-3. Include the hashtag `<#WORKSHOP_HASHTAG>`.
-4. Make the post **public** so we can see it.
-
-Subject to official rules: <RULES_LINK>. Winner announced <WINNER_DATE> on LinkedIn. One entry per person. Cloudflare employees are not eligible. No purchase necessary.
-
-A screenshot of your site or your favourite AI assistant answer makes the post stand out.
-
-**Copy-paste template** (replace `<STARTUP NAME>` and `<YOUR LIVE URL>`):
-
-```text
-Today I built and launched a website for my startup <STARTUP NAME> in under 2 hours, for free, at the Cloudflare Developer Platform workshop for startups in Uzbekistan 🇺🇿
-
-✅ Landing page running on Cloudflare's network in 330+ cities
-✅ Waitlist with a real database
-✅ AI assistant that answers customers in their own language
-
-From a GitHub commit to live in about a minute. No servers to manage, no code written from scratch, and my prototype is already production-ready.
-
-Check it out and join the waitlist: <YOUR LIVE URL>
-
-Thanks @Cloudflare and @<PRESENTER_NAME>!
-
-<#WORKSHOP_HASHTAG> #Cloudflare #startups #Uzbekistan
-```
-
-**Kept Plovify?** Use this one instead (replace `<YOUR LIVE URL>`):
-
-```text
-Today I launched Plovify — Plov as a Service 🍚 (a fictional startup, a very real stack) at the Cloudflare Developer Platform workshop for startups in Uzbekistan 🇺🇿
-
-✅ Landing page served from Cloudflare's network in 330+ cities (zero cold starts, unlike cold plov)
-✅ Waitlist with a real database
-✅ AI assistant that answers in English, Russian, Uzbek and more
-
-From a GitHub commit to live in about a minute, in under 2 hours, for free. No servers to manage, and the prototype is already production-ready.
-
-Ask my AI assistant about plov: <YOUR LIVE URL>
-
-Next: my own startup on the same stack.
-
-Thanks @Cloudflare and @<PRESENTER_NAME>!
-
-<#WORKSHOP_HASHTAG> #Cloudflare #startups #Uzbekistan
-```
-
 ## Feedback
 
-Please tell us how it went. It takes 2 minutes and helps us improve the next workshop:
-
-<FEEDBACK_SURVEY_LINK>
+How did it go? Please fill in the short survey in the webinar window. It takes a minute and helps us make the next session better.
 
 Thank you for building with us! 🚀
+
+## Let's connect
+
+Questions, ideas, or want to show what you built? Connect with me on [LinkedIn](https://www.linkedin.com/in/asazhin).
+
+

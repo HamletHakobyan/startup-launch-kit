@@ -99,10 +99,10 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 ### Step 4: Test it
 
-19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **Ask <your startup's name>** section.
+19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **AI Assistant** section.
 
     ![Landing page with the ASK AI button](images/03/01-website-askai-added.png)
-20. Click the first suggested question: **Do you have vegetarian plov?**. After a few seconds an answer appears below.
+20. Click the first suggested question: **What does Plovify do?** After a few seconds an answer appears below.
 
     !["Ask Plovify" AI answer](images/03/02-website-askai-question.png)
 
@@ -112,7 +112,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 	![ASK AI offtopic question](images/03/03-website-askai-offtopic.png)
 
 > [!NOTE]
-> **Languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes, so don't use it for anything binding. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. Using your own startup? The assistant only knows your basics. Optional: to make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
+> **Languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. To make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
 
 ## Checkpoint ✅
 
@@ -143,4 +143,4 @@ Your Worker now calls a 70-billion-parameter AI model with one line: `env.AI.run
 
 ---
 
-Next: [What's next + LinkedIn giveaway →](04-whats-next.md)
+Next: [What's next →](04-whats-next.md)
