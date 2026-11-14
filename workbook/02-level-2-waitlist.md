@@ -126,7 +126,7 @@ The list of emails is private. It is **not** available through your website. You
 
    This shows every signup, newest first.
 
-   <p align="center">
+   <p>
      <img src="images/02/06-d1-sql-request.png" width="600"
           alt="D1 Console tab: the SQL query and its result, the waitlist rows with emails and signup times">
    </p>
