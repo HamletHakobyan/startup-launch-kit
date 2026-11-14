@@ -73,9 +73,9 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 10. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
     It looks like `https://startup-launch-kit.<your-account>.workers.dev`. The middle part comes from your Cloudflare account (usually your account name).
-> [!TIP]
-> **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
-> ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
+	> [!TIP]
+	> **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
+	> ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
 
 ### Part B: Make it about YOUR startup (about 18 minutes)
 
