@@ -23,13 +23,13 @@ Same pattern as Level 2. You will change **3 files** in **your repo**, in this o
 Open two browser tabs:
 
 - **Tab A, the workshop repo:** https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-3
-- **Tab B, your repo:** `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it, or your catch-up repo if you used one)
+- **Tab B, your repo:** `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it)
 
 After **each** commit, wait for the **green check ✓** before you start the next one (about 1 minute). If something breaks, you then know exactly which file caused it.
 
 ## Steps
 
-### Part A: Replace the backend code
+### Step 1: Replace the backend code
 
 1. In **Tab A**, open `level-3/worker/index.ts`.
    Direct link: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-3/worker/index.ts
@@ -39,22 +39,38 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 5. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 6. Go to your repo's main page and wait for the **green check ✓** next to your commit (about 1 minute). Your site looks the same as before; that is expected.
 
-### Part B: Replace the settings file
+### Step 2: Replace the settings file
 
 7. In **Tab B**, open `wrangler.jsonc` and **write down the value** of the `"name"` line (for most people: `startup-launch-kit`).
+
+**startup-launch-kit/wrangler.jsonc:**
+    ```ts
+	<...>
+    "name": "startup-launch-kit",
+	<...>
+    ```
+
 8. In **Tab A**, open `level-3/wrangler.jsonc`.
    Direct link: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-3/wrangler.jsonc
 9. Click **Copy raw file**.
 10. In **Tab B**, on your `wrangler.jsonc`, click the **pencil icon** (✏️).
-11. **Replace the whole file:** select all, delete, paste.
+11. **Replace the whole file:** select all (Ctrl+A / Cmd+A), delete, then paste.
 12. **Check the `"name"` line.** It must be exactly the value from step 7. Fix it if needed.
 
-    > Your database is found by its name (`startup-launch-kit-db`), so nothing else needs to be copied from your old file. Your existing waitlist emails stay where they are.
+    > [!NOTE]
+    > Your database is found by its name (`startup-launch-kit-db`), so nothing else needs to be copied from your old file.
+    > **startup-launch-kit/wrangler.jsonc:**
+    ```ts
+	<...>
+	"database_name": "startup-launch-kit-db"
+	<...>
+    ```
+	> Your existing waitlist emails stay where they are.
 
 13. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 14. Wait for the **green check ✓** next to your commit (about 1 minute).
 
-### Part C: Turn on the assistant
+### Step 3: Turn on the assistant
 
 15. In **Tab B**, open `src/config.ts` and click the **pencil icon** (✏️).
 16. Press Ctrl+F (Cmd+F on Mac) and search for `enableAssistant` to find this line near the bottom:
@@ -68,17 +84,20 @@ After **each** commit, wait for the **green check ✓** before you start the nex
     ```ts
     enableAssistant: true, // Level 3
     ```
-
-    Make sure `enableWaitlist` is still `true`.
+    > [!NOTE]
+    > Make sure `enableWaitlist: true`.
 17. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 18. Wait for the **green check ✓** (about 1 minute).
 
-### Part D: Test it
+### Step 4: Test it
 
 19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **Ask <your startup's name>** section.
+
+    ![Landing page with the ASK AI button](images/03/02-website-askai-added.png)
 20. Click the first suggested question: **What does <your startup> do?** (Plovify: **Do you have vegetarian plov?**). After a few seconds an answer appears below.
 
     > [SCREENSHOT: "Ask Plovify" section with three suggested questions and an answer]
+	!["Ask Plovify" section with three suggested questions and an answer](images/03/02-website-askai-question.png)
 
 21. Type your own question about your startup and click **Ask**.
 22. Now ask in another language, for example in Russian: `Вы доставляете в Алматы?` or in Uzbek: `Sizda vegetarian palov bormi va Toshkentga yetkazib berasizmi?` (own startup: ask about it in your language). The answer comes back in the same language.

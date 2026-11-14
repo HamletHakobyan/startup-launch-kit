@@ -38,7 +38,6 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 3. In **Tab B** (your repo), go to the main page of your repo and click **Add file** → **Create new file**.
 
-   > [SCREENSHOT: "Add file" menu with "Create new file" highlighted]
    !["Add file" menu with "Create new file" highlighted](images/02/02-github-add-file.png)
 
 4. In the file name box, type exactly: `worker/index.ts`
