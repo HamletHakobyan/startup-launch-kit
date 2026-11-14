@@ -57,15 +57,15 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 11. **Replace the whole file:** select all (Ctrl+A / Cmd+A), delete, then paste.
 12. **Check the `"name"` line.** It must be exactly the value from step 7. Fix it if needed.
 
-    > [!NOTE]
-    > Your database is found by its name (`startup-launch-kit-db`), so nothing else needs to be copied from your old file.
-    > **startup-launch-kit/wrangler.jsonc:**
+> [!NOTE]
+> Your database is found by its name (`startup-launch-kit-db`), so nothing else needs to be copied from your old file.
+> **startup-launch-kit/wrangler.jsonc:**
     ```ts
 	<...>
 	"database_name": "startup-launch-kit-db"
 	<...>
     ```
-	> Your existing waitlist emails stay where they are.
+> Your existing waitlist emails stay where they are.
 
 13. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 14. Wait for the **green check ✓** next to your commit (about 1 minute).
@@ -84,8 +84,8 @@ After **each** commit, wait for the **green check ✓** before you start the nex
     ```ts
     enableAssistant: true, // Level 3
     ```
-    > [!NOTE]
-    > Make sure `enableWaitlist: true`.
+> [!NOTE]
+> Make sure `enableWaitlist: true`.
 17. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 18. Wait for the **green check ✓** (about 1 minute).
 
@@ -103,7 +103,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 23. Try an off-topic question, for example `How do I set up Kubernetes?` The assistant politely refuses and brings you back to your startup.
 	![ASK AI offtopic question](images/03/03-website-askai-offtopic.png)
 
-> **Note on languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes, so don't use it for anything binding. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. Using your own startup? The assistant only knows your basics. Optional: to make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
+> [!NOTE] **Languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes, so don't use it for anything binding. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. Using your own startup? The assistant only knows your basics. Optional: to make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
 
 ## Checkpoint ✅
 
