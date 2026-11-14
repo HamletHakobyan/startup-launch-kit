@@ -118,7 +118,7 @@ The list of emails is private. It is **not** available through your website. You
    <summary><b>💻 Prefer SQL? Run a query instead</b></summary>
    <br>
 
-   Open the **Console** tab, paste this query and click **Execute**:
+   Open the **Query** tab, paste this query and click **Run**:
 
    ```sql
    SELECT * FROM waitlist ORDER BY created_at DESC;
