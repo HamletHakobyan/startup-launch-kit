@@ -64,14 +64,14 @@ We do Part A together at the very start of the workshop. While your site builds,
 6. Click **Deploy**.
 7. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
-![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
+	![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
 
 8. When it finishes, click **Visit** button at the right upper corner to access your site.
-![Visit Button to Access Website](images/01/04-visit-site.png)
+	![Visit Button to Access Website](images/01/04-visit-site.png)
 
 9. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 
-![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
+	![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
 
 10. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
     It looks like `https://startup-launch-kit.<your-account>.workers.dev`. The middle part comes from your Cloudflare account (usually your account name).
@@ -132,7 +132,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
 17. Click the green **Commit changes...** button at the top right.
-![Github Commit Changes](images/01/08-commit-changes.png)
+	![Github Commit Changes](images/01/08-commit-changes.png)
 
 18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
    <img src="images/01/09-commit-to-main.png" width="480"
@@ -148,7 +148,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 > [!NOTE]
 > **How to see the build log.** In the Cloudflare dashboard: **Workers & Pages** → your Worker → **Deployments** tab → click the latest build → **Build**.
-![See Worker Build Logs](images/01/12-worker-build-logs.png)
+	![See Worker Build Logs](images/01/12-worker-build-logs.png)
 A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#build-failed).
 
 ## Checkpoint ✅
