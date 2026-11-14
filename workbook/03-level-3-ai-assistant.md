@@ -43,12 +43,15 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 7. In **Tab B**, open `wrangler.jsonc` and **write down the value** of the `"name"` line (for most people: `startup-launch-kit`).
 
-**startup-launch-kit/wrangler.jsonc:**
-    ```ts
-	<...>
-    "name": "startup-launch-kit",
-	<...>
-    ```
+   📄 `wrangler.jsonc`
+
+   ```jsonc
+   {
+     // ...
+     "name": "startup-launch-kit",
+     // ...
+   }
+   ```
 
 8. In **Tab A**, open `level-3/wrangler.jsonc`.
    Direct link: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-3/wrangler.jsonc
@@ -103,7 +106,8 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 23. Try an off-topic question, for example `How do I set up Kubernetes?` The assistant politely refuses and brings you back to your startup.
 	![ASK AI offtopic question](images/03/03-website-askai-offtopic.png)
 
-> [!NOTE] **Languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes, so don't use it for anything binding. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. Using your own startup? The assistant only knows your basics. Optional: to make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
+> [!NOTE]
+> **Languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes, so don't use it for anything binding. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. Using your own startup? The assistant only knows your basics. Optional: to make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
 
 ## Checkpoint ✅
 
