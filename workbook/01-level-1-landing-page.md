@@ -20,6 +20,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 1. Log in to https://dash.cloudflare.com in your browser.
 2. In a new tab, open this link (it is the Level 1 **Deploy to Cloudflare** button):
+
    [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1)
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
