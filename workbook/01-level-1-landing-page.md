@@ -24,14 +24,20 @@ We do Part A together at the very start of the workshop. While your site builds,
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
 
-   <img src="images/01/00-new-github-connection.png" width="480"
+   <p>
+     <img src="images/01/00-new-github-connection.png" width="480"
           alt="Cloudflare setup page: under Git account, click New GitHub connection">
-		  
+   </p>
+
    A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
    Keep **All repositories** selected and click **Install & Authorize**.
    GitHub then sends you back to Cloudflare automatically.
-   <img src="images/01/01-github-install-authorize.png" width="480"
-    alt="GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize">
+
+   <p>
+     <img src="images/01/01-github-install-authorize.png" width="480"
+          alt="GitHub asks to install Cloudflare Workers and Pages: click Install & Authorize">
+   </p>
+
    > This lets Cloudflare create your repository and rebuild your site when you change it.
    > You can limit access to specific repositories later in GitHub → Settings → Applications.
 
