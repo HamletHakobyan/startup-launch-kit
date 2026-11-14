@@ -92,19 +92,21 @@ After **each** commit, wait for the **green check ✓** before you start the nex
     ```ts
     enableAssistant: true, // Level 3
     ```
-> [!NOTE]
-> Make sure `enableWaitlist: true`.
+
+    Leave the line above it, `enableWaitlist: true`, as it is. If it is `false`, your waitlist form disappears from the site.
+
 17. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 18. Wait for the **green check ✓** (about 1 minute).
 
 ### Step 4: Test it
 
-19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **AI Assistant** section.
+19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **Ask Plovify** section (your startup's name if you changed it).
 
-    ![Landing page with the ASK AI button](images/03/01-website-askai-added.png)
-20. Click the first suggested question: **What does Plovify do?** After a few seconds an answer appears below.
+    ![Landing page with the Ask AI link in the top menu](images/03/01-website-askai-added.png)
 
-    !["Ask Plovify" AI answer](images/03/02-website-askai-question.png)
+20. Click the first suggested question, **What does Plovify do?** (again with your startup's name if you changed it). After a few seconds an answer appears below.
+
+    ![Ask Plovify section with the AI answer](images/03/02-website-askai-question.png)
 
 21. Type your own question about your startup and click **Ask**.
 22. Now ask in another language, for example in Russian: `Вы доставляете в Алматы?` or in Uzbek: `Sizda vegetarian palov bormi va Toshkentga yetkazib berasizmi?` (own startup: ask about it in your language). The answer comes back in the same language.
@@ -116,17 +118,27 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 ## Checkpoint ✅
 
-Ask your assistant one question, then paste the question, the answer and your URL in the workshop chat:
+Ask your assistant one question, then paste the question, the answer and your URL in the webinar chat:
 
-`Level 3 done: "Do you deliver to Almaty?" → "<the AI answer>" — https://startup-launch-kit.<your-name>.workers.dev`
+`Level 3 done: "Do you deliver to Almaty?" → "<the AI answer>" — https://startup-launch-kit.<your-cf-account>.workers.dev`
 
 ## What just happened
 
-Your Worker now calls a 70-billion-parameter AI model with one line: `env.AI.run(...)`. With every question it sends a hidden "system prompt" built from your `src/config.ts`, so the website and the assistant always tell the same story. You did not create an API key, sign up for a separate AI provider, or rent a GPU. The free plan includes 10,000 Workers AI "neurons" per day (reset at 00:00 UTC). Based on the model's published per-token rates, one answer uses roughly 50–80 neurons, so that is **about 150 questions per day for free** (an estimate; it depends on how long your texts and answers are). Your site is now a full-stack AI app: static frontend, API, database and AI, all deployed from one GitHub repo.
+Your site is now a full-stack AI app: static frontend, API, database and AI, all deployed from one GitHub repo.
+
+<details>
+<summary><b>How it works, and how it compares to AWS</b></summary>
+<br>
+
+Your Worker now calls a 70-billion-parameter AI model with one line: `env.AI.run(...)`. With every question it sends a hidden "system prompt" built from your `src/config.ts`, so the website and the assistant always tell the same story. You did not create an API key, sign up for a separate AI provider, or rent a GPU.
+
+The free plan includes 10,000 Workers AI "neurons" per day (reset at 00:00 UTC). Based on the model's published per-token rates, one answer uses roughly 50–80 neurons, so that is **about 150 questions per day for free** (an estimate; it depends on how long your texts and answers are).
 
 **On AWS this would typically need:** Amazon Bedrock, an IAM policy allowing your Lambda function to call it, and a longer Lambda timeout for AI responses, on top of the Level 2 setup.
 
 **In production:** swap models by changing one line; add AI Gateway for caching, rate limits and spend control; and when your content outgrows one settings file (docs, product catalogue, PDFs), use AI Search to let the assistant search it (RAG). Your prototype is your production: no rewrite, no migration.
+
+</details>
 
 ## Stuck?
 

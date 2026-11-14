@@ -19,9 +19,10 @@ A complete startup website. The starter site is about a fictional startup, **Plo
 We do Part A together at the very start of the workshop. While your site builds, the presenter explains how Cloudflare works. Part B comes after the theory.
 
 1. Log in to https://dash.cloudflare.com in your browser.
-2. In a new tab, open this link (it is the Level 1 **Deploy to Cloudflare** button):
+2. Ctrl+click (Cmd+click on Mac) the **Deploy to Cloudflare** button below. It opens in a new tab, so this workbook stays open:
 
    [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1)
+
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
 
@@ -46,20 +47,21 @@ We do Part A together at the very start of the workshop. While your site builds,
 
    | Field | What to do |
    | --- | --- |
-   | **Git account** / GitHub account | Choose your own GitHub account (the one you just connected). |
-   | **Repository name** | Keep the default, `startup-launch-kit`. Only if GitHub says it is already taken, change it (for example `startup-launch-kit-2`). |
-   | **Private / Public** repository | Either is fine. Private keeps your code to yourself. |
-   | **Worker name** / project name | **Keep `startup-launch-kit`.** |
-   | **Build command**, **Deploy command**, **Advanced settings** | Leave them exactly as they are. |
-   | Other resource settings (if shown) | Keep the suggested settings. |
+   | **Git account** | Choose your own GitHub account (the one you just connected). |
+   | **Create private Git repository** | Ticked or unticked, both work. Ticked keeps your code private. |
+   | **Project name** | Keep `startup-launch-kit`. It is used for both your repository and your Worker. Change it only if you see a message that the name is already taken (for example, use `startup-launch-kit-2`). |
+   | **Build command**, **Deploy command**, **Preview command** | Leave them exactly as they are. |
+   | **Enable Preview builds** | Leave it as it is. |
+   | **Protect with Cloudflare Access** | Leave it **off**. If it is on, visitors must log in to see your site. |
+   | Other settings (if shown) | Keep the suggested settings. |
 
 > [!WARNING]
-> If you **do** change the Worker name, write it down now. You will need it in Level 2.
+> If you **do** change the Project name, write it down now. You will need it in Level 2.
    
    <img src="images/01/02-worker-setup-window.png" width="480"
     alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
 
-6. Click **Create and deploy** (the button text may be slightly different, for example **Deploy**).
+6. Click **Deploy**.
 7. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
 
 ![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
@@ -72,6 +74,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 ![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
 
 10. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
+    It looks like `https://startup-launch-kit.<your-account>.workers.dev`. The middle part comes from your Cloudflare account (usually your account name).
 
 > [!TIP]
 > **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
@@ -79,7 +82,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 ### Part B: Make it about YOUR startup (about 18 minutes)
 
-11. Open your repo on GitHub: go to `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it). Or click the GitHub repository link on the Cloudflare page.
+11. Open your repo on GitHub: go to `https://github.com/<your-github-username>/startup-launch-kit` (use your repo name if you changed it).
 12. Click the folder `src`, then click the file `config.ts`.
 13. Click the **pencil icon** (✏️ "Edit this file") at the top right of the file.
     
@@ -113,7 +116,12 @@ We do Part A together at the very start of the workshop. While your site builds,
     ```
 
     This hides all Plovify sample content (menu, numbers, plov FAQ, the two sample blog posts and the "Plovify is fictional" footer) and uses neutral texts with **your** startup's name instead, for example "Join the Your Startup Name waitlist" and "Ask Your Startup Name". Keeping Plovify? Leave it `true`.
-16. Optional, in the same block: change `accentColor` to your brand colour as a hex code (for example `"#2563eb"` for blue, `"#16a34a"` for green), and `contactEmail` to your email. Keep the `#` and the quotes. Leave everything else as it is for now; the **OPTIONAL: more sections** block (features, menu, steps, numbers, FAQ) is empty on purpose and shows the Plovify examples or neutral texts. You can add your own items there after the workshop (the comments in the file show how). Do **not** change `enableWaitlist` or `enableAssistant`. Leave them `false` for now.
+16. Optional, in the same block:
+
+    - **Brand colour:** change `accentColor` to a hex code, for example `"#2563eb"` (blue) or `"#16a34a"` (green). Keep the `#` and the quotes.
+    - **Contact email:** change `contactEmail` to your email.
+    - **Leave everything else as it is for now.** The **OPTIONAL: more sections** block (features, menu, steps, numbers, FAQ) is empty on purpose. You can add your own items after the workshop; the comments in the file show how.
+    - **Do not change** `enableWaitlist` or `enableAssistant`. Leave them `false`; you turn them on in Levels 2 and 3.
 
 > [!NOTE]
 > **Rules so you don't break the file:**
@@ -145,22 +153,30 @@ A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#b
 
 ## Checkpoint ✅
 
-Paste your live URL in the workshop chat, for example:
+Paste your live URL in the webinar chat, for example:
 
-`Level 1 done: https://startup-launch-kit.<your-name>.workers.dev`
+`Level 1 done: https://startup-launch-kit.<your-cf-account>.workers.dev`
 
 ## What just happened
 
-You published a real website on Cloudflare's global network, with a free HTTPS address, and connected it to GitHub so every change goes live automatically. Cloudflare ran `npm run build`: Astro turned your settings in `config.ts` and the Markdown blog posts into ready-made static pages (home, blog, one page per post, 404). Then `wrangler deploy` uploaded the files to Cloudflare's network. Your site now runs in Cloudflare's network in 330+ cities in 125+ countries. There is no server for you to manage, and static file requests are free and unlimited on the free plan.
+You published a real website on Cloudflare's global network, connected to GitHub so every change goes live automatically.
+
+<details>
+<summary><b>How it works, and how it compares to AWS</b></summary>
+<br>
+
+Cloudflare ran `npm run build`: Astro turned your settings in `config.ts` and the Markdown blog posts into ready-made static pages (home, blog, one page per post, 404). Then `wrangler deploy` uploaded the files to Cloudflare's network. Your site now runs in 330+ cities in 125+ countries. There is no server for you to manage, and static file requests are free and unlimited on the free plan.
 
 **On AWS** you'd typically use Amplify Hosting or S3 + CloudFront, choose a region, and add a payment card at sign-up (required even on the AWS Free plan, which closes after 6 months).
 
 **In production:** connect your own domain (for example a `.uz` domain); HTTPS and DDoS protection are already on. Your prototype is your production: no rewrite, no migration.
 
+</details>
+
 ## Stuck?
 
 - First check [Troubleshooting](troubleshooting.md).
-- If the Deploy button flow fails completely, ask a helper in the chat. Most problems are an unverified email or the GitHub connection.
+- If the Deploy button flow fails completely, ask a helper in the webinar chat. Most problems are an unverified email or the GitHub connection.
 - You can continue to Level 2 even if your text is not perfect yet; you can edit `src/config.ts` any time.
 
 ## Bonus for fast finishers: publish your first blog post (about 3 minutes, optional)
@@ -188,7 +204,7 @@ Only do this if you are done and waiting. It is **not** needed for Level 2.
 
    `2026-01-31` is only an example: set `pubDate` to today's date (format YYYY-MM-DD). The newest date appears first on the blog.
 5. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
-6. Wait for the **green check ✓**, then open your live URL with `/blog` at the end (for example `https://startup-launch-kit.<your-name>.workers.dev/blog`). Your post is in the list. Click it to read it.
+6. Wait for the **green check ✓**, then open your live URL with `/blog` at the end (for example `https://startup-launch-kit.<your-cf-account>.workers.dev/blog`). Your post is in the list. Click it to read it.
 
 Red ✗? See [Troubleshooting: blog post errors](troubleshooting.md#blog-post-errors).
 

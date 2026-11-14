@@ -87,8 +87,17 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 ### Part D: Test it
 
-20. Open your live URL and refresh the page (Ctrl+F5 / Cmd+Shift+R). A **Waitlist** link appears in the top menu, and the main button changes from **Get in touch** to **Reserve your kazan**. Click it: it jumps to a new **Reserve your kazan for wedding season** section with an email form.
-21. Enter your email and click **Reserve**. You should see: **"You're in! People waiting for plov: 1."**
+20. Open your live URL and refresh the page (Ctrl+F5 / Cmd+Shift+R). A **Waitlist** link appears in the top menu, and the main button now jumps to a new waitlist section with an email form:
+
+    | | Kept Plovify | Your own startup (`showPlovifyExamples: false`) |
+    | --- | --- | --- |
+    | Main button | **Reserve your kazan** | **Get early access** |
+    | Section title | **Reserve your kazan for wedding season** | **Join the *Your Startup Name* waitlist** |
+    | Form button | **Reserve** | **Join** |
+
+21. Enter your email and click the form button. You should see:
+    - Plovify: **"You're in! People waiting for plov: 1."**
+    - Your own startup: **"You're in! People on the waitlist: 1."**
 
 	![Landing page with the waitlist form and the success message](images/02/04-waiting-list.png)
 
@@ -97,7 +106,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 > Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
 
 22. *(Optional, skip if short on time.)* Open your live URL with `/api/waitlist/count` at the end, for example
-    `https://startup-launch-kit.<your-name>.workers.dev/api/waitlist/count`
+    `https://startup-launch-kit.<your-cf-account>.workers.dev/api/waitlist/count`
     You should see something like `{"count":2}`. This is your API answering directly.
 
 ### Part E: See the emails in your database
@@ -128,7 +137,7 @@ The list of emails is private. It is **not** available through your website. You
 
    <p>
      <img src="images/02/06-d1-sql-request.png" width="480"
-          alt="D1 Console tab: the SQL query and its result, the waitlist rows with emails and signup times">
+          alt="D1 Query tab: the SQL query and its result, the waitlist rows with emails and signup times">
    </p>
 
    </details>
@@ -137,19 +146,27 @@ The list of emails is private. It is **not** available through your website. You
 
 Join the waitlist on your own page, then paste in the webinar chat:
 
-`Level 2 done: https://startup-launch-kit.<your-name>.workers.dev`
+`Level 2 done: https://startup-launch-kit.<your-cf-account>.workers.dev`
 
 Bonus: join the waitlist of the person who posted before you!
 
 ## What just happened
 
-You added a backend API and a SQL database to your website without creating a server, choosing a region or typing a password. One line in `wrangler.jsonc` (`d1_databases`) told Cloudflare "this Worker needs a database called `DB`", and Cloudflare created it during the deploy. The Worker creates the `waitlist` table the first time it runs. The setting `run_worker_first: ["/api/*"]` sends `/api/...` requests to your code, while everything else is served as static files.
+You added a backend API and a SQL database to your website without creating a server, choosing a region or typing a password.
+
+<details>
+<summary><b>How it works, and how it compares to AWS</b></summary>
+<br>
+
+One line in `wrangler.jsonc` (`d1_databases`) told Cloudflare "this Worker needs a database called `DB`", and Cloudflare created it during the deploy. The Worker creates the `waitlist` table the first time it runs. The setting `run_worker_first: ["/api/*"]` sends `/api/...` requests to your code, while everything else is served as static files.
 
 The free plan includes 100,000 Worker requests per day, and D1 gives you 5 million rows read and 100,000 rows written per day.
 
 **On AWS this would typically need:** API Gateway plus a Lambda function for the API, a database (for example DynamoDB), IAM roles so the function may access the database, and routing `/api` from your website to the API. Each service is configured and billed separately.
 
 **In production:** the same D1 database grows from your first signup to millions of rows; paid usage starts with the $5/month Workers plan. Your prototype is your production: no rewrite, no migration.
+
+</details>
 
 ## Stuck?
 

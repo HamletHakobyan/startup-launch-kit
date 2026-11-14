@@ -39,5 +39,5 @@ In this workbook we call it **the workshop repo**. The copy that Cloudflare crea
 
 1. Do one step at a time. Each step is one action.
 2. When a step says **"replace the whole file"**, select everything in the file (Ctrl+A on Windows, Cmd+A on Mac), delete it, then paste.
-3. After each level there is a **Checkpoint**. Paste your link in the workshop chat so we know you are on track.
-4. Stuck for more than 3 minutes? Write in the chat, and see the **Stuck?** section at the end of each level.
+3. After each level there is a **Checkpoint**. Paste your link in the webinar chat so we know you are on track.
+4. Stuck for more than 3 minutes? Write in the webinar chat, and see the **Stuck?** section at the end of each level.

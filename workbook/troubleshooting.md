@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Find your problem below. If nothing helps within 3 minutes, write in the workshop chat: what level and step you are on, and a screenshot.
+Find your problem below. If nothing helps within 3 minutes, write in the webinar chat: what level and step you are on, and a screenshot.
 
 - [Where to see logs](#where-to-see-logs)
 - [The Deploy to Cloudflare button does not work](#the-deploy-to-cloudflare-button-does-not-work)
@@ -49,7 +49,7 @@ You see a red ✗ next to your commit. Open the build log (see above) and look f
 | `Unterminated string` | A closing `"` is missing on that line. Add it back at the end of your text. If unsure, compare with the original: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-1/src/config.ts |
 | `Could not resolve "worker/index.ts"` or `The entry-point file ... was not found` | The file `worker/index.ts` is missing or has a different name. Check that it is in a folder called `worker` (lowercase) and named `index.ts`. |
 | Error in `wrangler.jsonc` (for example `InvalidSymbol`) | Part of the file was not pasted. Replace the whole file again, using **Copy raw file**. |
-| Anything else | Copy the last 20 lines of the log into the workshop chat. |
+| Anything else | Copy the last 20 lines of the log into the webinar chat. |
 
 After you fix the file, commit again. Each commit starts a new build.
 
@@ -92,9 +92,9 @@ The `"name"` line in your `wrangler.jsonc` must be **exactly** the name of your 
 
 **I don't see the form at all:** check that `enableWaitlist: true` in `src/config.ts`, wait for the green ✓, and refresh.
 
-**How do I see the emails?** Only in the dashboard (they are private): **Storage & databases** → **D1 SQLite Database** → `startup-launch-kit-db` → **Explore Data** → select the `waitlist` table. (Or open the **Console** tab and run `SELECT * FROM waitlist ORDER BY created_at DESC;`)
+**How do I see the emails?** Only in the dashboard (they are private): **Storage & databases** → **D1 SQLite Database** → `startup-launch-kit-db` → **Explore Data** → select the `waitlist` table. (Or, in Explore Data, open the **Query** tab and run `SELECT * FROM waitlist ORDER BY created_at DESC;`)
 
-If there is no `waitlist` table (or the console says `no such table: waitlist`), nobody has used the form yet. Submit the form once, then look again.
+If there is no `waitlist` table (or the query result says `no such table: waitlist`), nobody has used the form yet. Submit the form once, then look again.
 
 ## AI errors
 
