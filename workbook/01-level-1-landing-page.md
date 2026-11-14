@@ -23,8 +23,10 @@ We do Part A together at the very start of the workshop. While your site builds,
    https://deploy.workers.cloudflare.com/?url=https://github.com/asazhin-dev/startup-launch-kit/tree/main/level-1
 3. If Cloudflare asks you to choose an account, choose your account.
 4. Under **Git account**, click **New GitHub connection**.
+
    <img src="images/01/00-new-github-connection.png" width="480"
           alt="Cloudflare setup page: under Git account, click New GitHub connection">
+		  
    A GitHub page opens asking to install **Cloudflare Workers and Pages** on your account.
    Keep **All repositories** selected and click **Install & Authorize**.
    GitHub then sends you back to Cloudflare automatically.
@@ -138,7 +140,7 @@ A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#b
 
 Paste your live URL in the workshop chat, for example:
 
-`Level 1 done: https://startup-launch-kit.your-name.workers.dev`
+`Level 1 done: https://startup-launch-kit.<your-name>.workers.dev`
 
 ## What just happened
 
@@ -179,7 +181,7 @@ Only do this if you are done and waiting. It is **not** needed for Level 2.
 
    `2026-01-31` is only an example: set `pubDate` to today's date (format YYYY-MM-DD). The newest date appears first on the blog.
 5. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
-6. Wait for the **green check ✓**, then open your live URL with `/blog` at the end (for example `https://startup-launch-kit.your-name.workers.dev/blog`). Your post is in the list. Click it to read it.
+6. Wait for the **green check ✓**, then open your live URL with `/blog` at the end (for example `https://startup-launch-kit.<your-name>.workers.dev/blog`). Your post is in the list. Click it to read it.
 
 Red ✗? See [Troubleshooting: blog post errors](troubleshooting.md#blog-post-errors).
 

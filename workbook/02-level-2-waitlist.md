@@ -97,7 +97,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 > Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
 
 22. *(Optional, skip if short on time.)* Open your live URL with `/api/waitlist/count` at the end, for example
-    `https://startup-launch-kit.your-name.workers.dev/api/waitlist/count`
+    `https://startup-launch-kit.<your-name>.workers.dev/api/waitlist/count`
     You should see something like `{"count":2}`. This is your API answering directly.
 
 ### Part E: See the emails in your database
@@ -131,7 +131,7 @@ The list of emails is private. It is **not** available through your website. You
 
 Join the waitlist on your own page, then paste in the webinar chat:
 
-`Level 2 done: https://startup-launch-kit.your-name.workers.dev`
+`Level 2 done: https://startup-launch-kit.<your-name>.workers.dev`
 
 Bonus: join the waitlist of the person who posted before you!
 
