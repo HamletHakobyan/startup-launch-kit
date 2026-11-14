@@ -78,7 +78,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 14. At the top of the file you see a block called **EDIT: basics**. It looks like this:
 
-    > 📄 `src/config.ts`
+    📄 `src/config.ts`
     ```ts
     name: "Plovify",
     tagline: "Plov as a Service",

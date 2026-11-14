@@ -70,6 +70,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 16. In **Tab B**, open `src/config.ts` and click the **pencil icon** (✏️).
 17. Press Ctrl+F (Cmd+F on Mac) and search for `enableWaitlist` to find this line near the bottom:
 
+    📄 `src/config.ts`
     ```ts
     enableWaitlist: false, // Level 2
     ```
@@ -92,7 +93,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 	![Landing page with the waitlist form and the success message](images/02/04-waiting-list.png)
 
 > [!NOTE]
-> What happens if the same email signs up twice? (click to expand)</summary>
+> What happens if the same email signs up twice?
 > Try the same email again: the number does not go up (duplicates are ignored). Try a different email: the number goes up.
 
 22. *(Optional, skip if short on time.)* Open your live URL with `/api/waitlist/count` at the end, for example
@@ -128,7 +129,7 @@ The list of emails is private. It is **not** available through your website. You
 
 ## Checkpoint ✅
 
-Join the waitlist on your own page, then paste in the workshop chat:
+Join the waitlist on your own page, then paste in the webinar chat:
 
 `Level 2 done: https://startup-launch-kit.your-name.workers.dev`
 
