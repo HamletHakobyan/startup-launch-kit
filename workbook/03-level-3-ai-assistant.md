@@ -94,14 +94,14 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **Ask <your startup's name>** section.
 
     ![Landing page with the ASK AI button](images/03/02-website-askai-added.png)
-20. Click the first suggested question: **What does <your startup> do?** (Plovify: **Do you have vegetarian plov?**). After a few seconds an answer appears below.
+20. Click the first suggested question: **Do you have vegetarian plov?**. After a few seconds an answer appears below.
 
-    > [SCREENSHOT: "Ask Plovify" section with three suggested questions and an answer]
-	!["Ask Plovify" section with three suggested questions and an answer](images/03/02-website-askai-question.png)
+    !["Ask Plovify" AI answer](images/03/02-website-askai-question.png)
 
 21. Type your own question about your startup and click **Ask**.
 22. Now ask in another language, for example in Russian: `Вы доставляете в Алматы?` or in Uzbek: `Sizda vegetarian palov bormi va Toshkentga yetkazib berasizmi?` (own startup: ask about it in your language). The answer comes back in the same language.
 23. Try an off-topic question, for example `How do I set up Kubernetes?` The assistant politely refuses and brings you back to your startup.
+	![ASK AI offtopic question](images/03/03-website-askai-offtopic.png)
 
 > **Note on languages and facts:** AI answers are different every time. Russian, Uzbek and other answers may mix in words from other languages; edit before using. Very short questions, and Azerbaijani vs. Turkish, can still be mixed up: write a full sentence. The assistant is told to use only the facts in `src/config.ts` and never invent prices or delivery promises, but AI can still make mistakes, so don't use it for anything binding. The assistant may occasionally draw conclusions from your tagline or misspell words in less common languages — test it and adjust your content. Using your own startup? The assistant only knows your basics. Optional: to make it smarter, add a few `faq` (or `menu`) items in `src/config.ts` (the comments show the format); it learns them on the next commit.
 
