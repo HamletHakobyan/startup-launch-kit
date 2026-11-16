@@ -19,9 +19,9 @@ There are two kinds of logs:
 **1. Build log** (did my change get built and published?)
 
 - On GitHub: on your repo's main page, click the small icon next to the latest commit (yellow dot = building, green ✓ = done, red ✗ = failed), then click **Details**.
-- Or in Cloudflare: https://dash.cloudflare.com → **Workers & Pages** → your Worker → **Deployments** tab (or **Builds**) → click the latest build → **View build log**.
+- Or in Cloudflare: https://dash.cloudflare.com → **Workers & Pages** → your Worker → **Deployments** tab (or **Builds**) → click the latest build → **Build**.
 
-> [SCREENSHOT: Workers Builds build log in the Cloudflare dashboard]
+![Worker Build Logs](images/01/12-worker-build-logs.png)
 
 Read the log from the **bottom up**. The real error is usually in the last red lines.
 
@@ -137,7 +137,7 @@ Each level has a **Stuck?** section with a catch-up button. It deploys a **finis
 1. Click the catch-up button for the level you want to skip.
 2. On the setup page, give the project a **new name** for both the repository and the Worker, for example `startup-launch-kit-l2`. (You already have `startup-launch-kit`, and names must be unique.)
 3. Leave the build/deploy commands as they are and **keep the suggested database settings**. The catch-up app uses the same database name (`startup-launch-kit-db`), so it connects to the database you may already have. If you see emails from your earlier tests in the waitlist, that's fine and expected.
-4. Click **Create and deploy** and wait for it to finish.
+4. Click **Deploy** and wait for it to finish.
 5. From now on, use the **new repo** (`https://github.com/<your-github-username>/startup-launch-kit-l2`) and the **new URL**.
 6. Your texts are not copied. Open `src/config.ts` in the new repo and fill in your startup's basics again (name, tagline, description, accentColor, contactEmail, and `showPlovifyExamples: false` if you built your own startup), plus any other sections you changed. If you wrote a blog post, create it again in `src/content/blog/`.
 7. In the next level, when you check the `"name"` line in `wrangler.jsonc`, it must be your **new** name (for example `startup-launch-kit-l2`).
