@@ -69,13 +69,13 @@ We do Part A together at the very start of the workshop. While your site builds,
    ![Visit Button to Access Website](images/01/04-visit-site.png)
 
 9. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
-	![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
+   ![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
 
 10. Copy that address from your browser's address bar and keep it somewhere. This is **your live URL**.
     It looks like `https://startup-launch-kit.<your-account>.workers.dev`. The middle part comes from your Cloudflare account (usually your account name).
-	> [!TIP]
-	> **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
-	> ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
+    > [!TIP]
+    > **How to find your live URL later.** In the Cloudflare dashboard, open **Workers & Pages** in the left menu (or type "Workers" in the search bar at the top), click your Worker `startup-launch-kit`. Your `.workers.dev` address is shown on the Worker's overview page. 
+    > ![Workers URL on the Overview Page](images/01/06-workers-url-overview.png)
 
 ### Part B: Make it about YOUR startup (about 18 minutes)
 
@@ -129,7 +129,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
 17. Click the green **Commit changes...** button at the top right.
-   ![Github Commit Changes](images/01/08-commit-changes.png)
+    ![Github Commit Changes](images/01/08-commit-changes.png)
 
 18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
     <img src="images/01/09-commit-to-main.png" width="480"
@@ -141,7 +141,7 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 20. When you see the green check, open your live URL and refresh the page (Ctrl+F5 on Windows, Cmd+Shift+R on Mac). You should see your startup's name in the top menu, your tagline as the big headline, and your description below it. The illustration shows your name too. If you set `showPlovifyExamples: false`, the menu, numbers and FAQ are gone and the blog says "Our first post is coming soon." If you changed `accentColor`, the buttons and highlights now use your colour.
 
-	![Personalised site with a custom name, headline and a blue accent colour](images/01/11-personalized-site.png)
+    ![Personalised site with a custom name, headline and a blue accent colour](images/01/11-personalized-site.png)
 
 > [!NOTE]
 > **How to see the build log.** In the Cloudflare dashboard: **Workers & Pages** → your Worker → **Deployments** tab → click the latest build → **Build**.
