@@ -118,9 +118,9 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 ## Checkpoint ✅
 
-Ask your assistant one question, then paste the question, the answer and your URL in the webinar chat:
+Ask your assistant one question (for example "Do you deliver to Almaty?", or a question from your own FAQ), then paste the question, the answer and your URL in the webinar chat:
 
-`Level 3 done: "Do you deliver to Almaty?" or a question from your own FAQ → "<the AI answer>" — https://startup-launch-kit.<your-cf-account>.workers.dev`
+`Level 3 done: "<your question>" → "<the AI answer>" — https://startup-launch-kit.<your-cf-account>.workers.dev`
 
 ## What just happened
 
