@@ -99,7 +99,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
     - Plovify: **"You're in! People waiting for plov: 1."**
     - Your own startup: **"You're in! People on the waitlist: 1."**
 
-	![Landing page with the waitlist form and the success message](images/02/04-waiting-list.png)
+    ![Landing page with the waitlist form and the success message](images/02/04-waiting-list.png)
 
 > [!NOTE]
 > What happens if the same email signs up twice?
@@ -117,7 +117,7 @@ The list of emails is private. It is **not** available through your website. You
 24. In the left menu, open **Storage & databases** → **D1 SQLite Database** (or type "D1" in the search bar at the top).
 25. Click the database **startup-launch-kit-db**, then click **Explore Data** (top right).
 
-	![Startup-launch-kit-db overview page with the Explore Data button highlighted](images/02/05-d1-db-overview.png)
+    ![Startup-launch-kit-db overview page with the Explore Data button highlighted](images/02/05-d1-db-overview.png)
 
 26. Select the **waitlist** table. You should see your test emails, with the date and time they joined (in UTC).
 
