@@ -55,18 +55,18 @@ We do Part A together at the very start of the workshop. While your site builds,
    | **Protect with Cloudflare Access** | Leave it **off**. If it is on, visitors must log in to see your site. |
    | Other settings (if shown) | Keep the suggested settings. |
 
-> [!WARNING]
-> If you **do** change the Project name, write it down now. You will need it in Level 2.
+   > [!WARNING]
+   > If you **do** change the Project name, write it down now. You will need it in Level 2.
    
    <img src="images/01/02-worker-setup-window.png" width="480"
     alt="Cloudflare 'Set up your application' page: keep Project name startup-launch-kit and the default commands, then click Deploy">
 
 6. Click **Deploy**.
 7. Wait 1–3 minutes. You will see the build progress. Do not close the tab.
-	![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
+   ![Deployment progress screen with build steps](images/01/03-deployment-progress.png)
 
 8. When it finishes, click **Visit** button at the right upper corner to access your site.
-	![Visit Button to Access Website](images/01/04-visit-site.png)
+   ![Visit Button to Access Website](images/01/04-visit-site.png)
 
 9. You should see a complete website for the fictional startup **Plovify**, with the headline **"Plov as a Service"**. Scroll down to see the features, menu, FAQ and footer, and click **Blog** in the top menu.
 	![The Plovify starter site: kazan logo and top menu, orange "Get in touch" button, headline "Plov as a Service", steaming kazan illustration on the right, numbers strip, feature cards with icons](images/01/05-site-plovify.png)
@@ -129,10 +129,10 @@ We do Part A together at the very start of the workshop. While your site builds,
 > - Type your text directly in the GitHub editor. Text pasted from Word, Google Docs or a phone may contain "curly" quotes `“ ”` that break the build. If you paste, retype the outer quotes `"` in the editor.
 
 17. Click the green **Commit changes...** button at the top right.
-	![Github Commit Changes](images/01/08-commit-changes.png)
+   ![Github Commit Changes](images/01/08-commit-changes.png)
 
 18. In the pop-up, keep **Commit directly to the `main` branch** selected and click **Commit changes**.
-   <img src="images/01/09-commit-to-main.png" width="480"
+    <img src="images/01/09-commit-to-main.png" width="480"
           alt="Github Commit to Main">
 
 19. Wait about 1 minute. On your repo's main page, next to the latest commit message, you will see a small **yellow dot** (building). It turns into a **green check ✓** when your site is live, or a **red ✗** if the build failed.
@@ -145,8 +145,8 @@ We do Part A together at the very start of the workshop. While your site builds,
 
 > [!NOTE]
 > **How to see the build log.** In the Cloudflare dashboard: **Workers & Pages** → your Worker → **Deployments** tab → click the latest build → **Build**.
-	![See Worker Build Logs](images/01/12-worker-build-logs.png)
-A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#build-failed).
+> ![See Worker Build Logs](images/01/12-worker-build-logs.png)
+> A red ✗ means something went wrong: see [Troubleshooting](troubleshooting.md#build-failed).
 
 ## Checkpoint ✅
 
