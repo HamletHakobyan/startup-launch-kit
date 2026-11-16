@@ -51,7 +51,7 @@ Tick every box before the workshop:
 - [ ] I can log in to https://dash.cloudflare.com and my email is verified.
 - [ ] I can open the workshop repo: https://github.com/asazhin-dev/startup-launch-kit
 - [ ] I have written down, in one or two sentences, what my startup does and who it is for.
-- [ ] I have 3 short benefits of my product in mind (for example: "Fast", "Cheap", "Works offline").
+- [ ] I have a one-sentence tagline and 1–2 sentences about what my startup does.
 
 Don't have a startup yet? No problem: the starter site is about a fictional startup, **Plovify** ("Plov as a Service"). You can keep it and tweak it.
 
