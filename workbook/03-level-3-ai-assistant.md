@@ -29,7 +29,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 
 ## Steps
 
-### Step 1: Replace the backend code
+### Part A: Replace the backend code
 
 1. In **Tab A**, open `level-3/worker/index.ts`.
    Direct link: https://github.com/asazhin-dev/startup-launch-kit/blob/main/level-3/worker/index.ts
@@ -39,7 +39,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 5. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 6. Go to your repo's main page and wait for the **green check ✓** next to your commit (about 1 minute). Your site looks the same as before; that is expected.
 
-### Step 2: Replace the settings file
+### Part B: Replace the settings file
 
 7. In **Tab B**, open `wrangler.jsonc` and **write down the value** of the `"name"` line (for most people: `startup-launch-kit`).
 
@@ -78,7 +78,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 13. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 14. Wait for the **green check ✓** next to your commit (about 1 minute).
 
-### Step 3: Turn on the assistant
+### Part C: Turn on the assistant
 
 15. In **Tab B**, open `src/config.ts` and click the **pencil icon** (✏️).
 16. Press Ctrl+F (Cmd+F on Mac) and search for `enableAssistant` to find this line near the bottom:
@@ -98,13 +98,13 @@ After **each** commit, wait for the **green check ✓** before you start the nex
 17. Click **Commit changes...** → **Commit directly to the `main` branch** → **Commit changes**.
 18. Wait for the **green check ✓** (about 1 minute).
 
-### Step 4: Test it
+### Part D: Test it
 
 19. Open your live URL and refresh (Ctrl+F5 / Cmd+Shift+R). Click **Ask AI** in the top menu (or scroll down) to reach the **Ask Plovify** section (your startup's name if you changed it).
 
     ![Landing page with the Ask AI link in the top menu](images/03/01-website-askai-added.png)
 
-20. Click the first suggested question, **What does Plovify do?** (again with your startup's name if you changed it). After a few seconds an answer appears below.
+20. Click the first suggested question, for example **Do you have vegetarian plov?**. After a few seconds an answer appears below.
 
     ![Ask Plovify section with the AI answer](images/03/02-website-askai-question.png)
 
