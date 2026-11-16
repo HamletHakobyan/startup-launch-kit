@@ -109,7 +109,7 @@ After **each** commit, wait for the **green check ✓** before you start the nex
     ![Ask Plovify section with the AI answer](images/03/02-website-askai-question.png)
 
 21. Type your own question about your startup and click **Ask**.
-22. Now ask in another language, for example in Russian: `Вы доставляете в Алматы?` or in Uzbek: `Sizda vegetarian palov bormi va Toshkentga yetkazib berasizmi?` (own startup: ask about it in your language). The answer comes back in the same language.
+22. Now ask in another language, for example in Russian: `Вы доставляете в Алматы?` or in Uzbek: `Sizda vegetarian palov bormi?` (own startup: ask about it in your language). The answer comes back in the same language.
 23. Try an off-topic question, for example `How do I set up Kubernetes?` The assistant politely refuses and brings you back to your startup.
     ![ASK AI offtopic question](images/03/03-website-askai-offtopic.png)
 
