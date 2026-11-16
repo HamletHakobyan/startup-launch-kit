@@ -57,4 +57,4 @@ Workers AI always runs on Cloudflare, so the AI assistant needs `npx wrangler lo
 
 ## License
 
-<LICENSE_PLACEHOLDER>
+MIT. See [LICENSE](LICENSE). You are free to use, change and launch this code as your own startup's site.
