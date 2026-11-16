@@ -43,7 +43,7 @@ Each `level-*` folder is a complete, self-contained project.
 
 ## For developers (optional)
 
-You do not need this for the workshop. If you prefer to work locally (Node.js 20+), or in GitHub Codespaces:
+You do not need this for the workshop. If you prefer to work locally (Node.js 22+), or in GitHub Codespaces:
 
 ```bash
 cd level-3
